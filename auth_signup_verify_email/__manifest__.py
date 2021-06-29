@@ -11,7 +11,7 @@
     "Odoo Community Association (OCA)",
     "license": "AGPL-3",
     "depends": ["auth_signup"],
-    "external_dependencies": {"python": ["lxml", "email_validator"]},
+    "external_dependencies": {"python": ["lxml", "email-validator"]},
     "data": ["views/signup.xml"],
     "installable": True,
 }
