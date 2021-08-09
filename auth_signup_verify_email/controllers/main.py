@@ -15,7 +15,6 @@ _logger = logging.getLogger(__name__)
 
 class SignupVerifyEmail(AuthSignupHome):
     
-    @http.route()
     def web_auth_signup(self, *args, **kw):
         if kw.get("login", False) and not kw.get("password", False):
             return self.passwordless_signup(**kw)
