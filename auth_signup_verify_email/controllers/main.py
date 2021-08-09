@@ -46,6 +46,7 @@ class SignupVerifyEmail(AuthSignupHome):
         values["lang"] = request.context.get("lang", "")
 
         # remove values that could raise "Invalid field '*' on model 'res.users'"
+        values.pop("csrf_token", "")
         values.pop("redirect", "")
         values.pop("token", "")
 
